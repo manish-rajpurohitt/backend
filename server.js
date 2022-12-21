@@ -11,7 +11,6 @@ const app = express();
 app.use(express.json());
 
 app.use('/api/auth', require('./routes/auth'));
-app.use('/api/private', require('./routes/private'));
 app.use('/api/address', require('./routes/addressRoute'));
 // TODO - app.use('/api/product', require('./routes/productsRoute'));
 app.use('/api/cart', require('./routes/cartRoute'));
