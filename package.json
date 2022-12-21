@@ -1,7 +1,7 @@
 {
-  "name": "jewellery-shop-api",
+  "name": "ecommerce-backend-outscal",
   "version": "1.0.0",
-  "description": "Backend API's for jewellery shop",
+  "description": "Backend API's for ecommerce website",
   "main": "sever.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/manish-rajpurohitt/jewellery-shop/backend"
+    "url": "https://github.com/manish-rajpurohitt/ecommerce-backend-outscal/"
   },
   "author": "Manish",
   "license": "MIT",
