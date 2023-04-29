@@ -15,6 +15,7 @@ app.use('/api/address', require('./routes/addressRoute'));
 // TODO - app.use('/api/product', require('./routes/productsRoute'));
 app.use('/api/cart', require('./routes/cartRoute'));
 app.use('/api/order', require('./routes/orderRoute'));
+app.use('/api/product', require('./routes/productsRoute'));
 
 app.use(errorHandler);
 const PORT = process.env.PORT || 5000;

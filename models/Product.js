@@ -1,89 +1,63 @@
 const mongoose = require('mongoose');
 
 const ProductSchema = mongoose.Schema({
-    addedOn: {
-        type: Date,
-        default: Date.now,
-        required: true
-    },
-    brandName: {
+    brand_name: {
         type: String
     },
-    title:{
-        type: String,
-        required : true
-    },
-    categoryCode: {
+    category: {
         type: String
     },
-    description: {
+    net_content: {
+        type: String
+    },
+    measurement_unit_of_weight: {
+        type: String
+    },
+    mrp: {
         type: String,
         required: true
     },
-    gstInPercentage: {
+    gst: {
         type: String
     },
-    isAvailableOnWebsite: {
-        type: Boolean,
-        required: true
-    },
-    isDeliveryAvailable: {
-        type: Boolean,
-        required: true
-    },
-    manufacturingCountry: {
+    cgst: {
         type: String
     },
-    modelName: {
+    sgst: {
         type: String
     },
-    productCategoryId: {
+    igst: {
         type: String
     },
     productName: {
         type: String,
         required: true
     },
-    purchasePrice: {
+    shelf_life: {
+        type: String
+    },
+    country_of_origin: {
+        type: String
+    },
+    measurement_unit_of_weight: {
         type: String,
-        required: true
     },
-    sellingPrice: {
+    gtin: {
         type: String,
-        required: true
-    },
-    stockQuantity: {
-        type: Number,
-        required: true
-    },
-    stockQuantityUnit: {
+    },hsn: {
         type: String,
-        enum: ["PIECE", "DOZEN", "LOT", "KILO_GRAM", "GRAM", "METER", "CENTI_METER"],
-        required: true
-    },
-    updatedOn: {
-        type: Date,
-        default: Date.now,
-        required: true
-    },
-    variantAttributes: {
-        type: Array
-    },
-    variantValues: {
-        type: Array
-    },
-    isWarrantyAvailable: {
-        type: Boolean,
-        required: true
-    },
-    warranty: {
-        type: Number
-    },
-    warrantyUnit: {
+    },unit: {
         type: String,
-        enum: ["YEAR", "MONTH"],
-    }  
+    },license_number: {
+        type: String,
+    },modified_date: {
+        type: String,
+    },provider_url: {
+        type: String,
+    },thumbnail_url: {
+        type: String,
+    },
 });
 
-let Product = mongoose.model("Products", ProductSchema);
+let Product = mongoose.model("products", ProductSchema);
 module.exports = Product;
